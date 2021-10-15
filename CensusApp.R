@@ -5,7 +5,7 @@ library(shinythemes)
 
 #runUrl("http://pages.stat.wisc.edu/~karlrohe/ds479/code/census-app.zip")
 
-setwd("/Users/erika/Desktop/UW/2021fall/hw")
+
 countries <- readRDS("CensusApp/data/counties.rds")
 source("CensusApp/helpers.R")
 
