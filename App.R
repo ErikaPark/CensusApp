@@ -6,8 +6,8 @@ library(shinythemes)
 #runUrl("http://pages.stat.wisc.edu/~karlrohe/ds479/code/census-app.zip")
 
 
-countries <- readRDS("data/counties.rds")
-source("helpers.R")
+countries <- readRDS("CensusApp/data/counties.rds")
+source("CensusApp/helpers.R")
 
 percent_map(countries$white, "darkgreen", "% White")
 
