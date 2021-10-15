@@ -12,7 +12,7 @@ percent_map(countries$white, "darkgreen", "% White")
 
 # User interface 
 ui <- fluidPage(theme = shinytheme("cerulian"),
-  titlePanel("censusVis"),
+  titlePanel("CensusVis"),
   
   sidebarLayout(
     sidebarPanel(
@@ -59,4 +59,4 @@ server <- function(input, output){
 
 #Shiny App function - Run app 
 shinyApp(ui = ui, server = server)
-
+runApp("CensusApp", display.mode = "showcase")
