@@ -5,7 +5,8 @@ library(shinythemes)
 
 #runUrl("http://pages.stat.wisc.edu/~karlrohe/ds479/code/census-app.zip")
 
-countries <- readRDS("CensusApp/data/countries.rds")
+setwd("/Users/erika/Desktop/UW/2021fall/hw")
+countries <- readRDS("CensusApp/data/counties.rds")
 source("CensusApp/helpers.R")
 
 percent_map(countries$white, "darkgreen", "% White")
@@ -59,4 +60,4 @@ server <- function(input, output){
 
 #Shiny App function - Run app 
 shinyApp(ui = ui, server = server)
-runApp("CensusApp", display.mode = "showcase")
+#runApp("CensusApp", display.mode = "showcase")
